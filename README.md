@@ -34,7 +34,7 @@ Projeto desenvolvido como exercício prático para criar uma **página de links*
 - **Botões interativos** com efeito hover
 - Layout **responsivo**
 - Uso de **HTML semântico e acessível**
-- Estrutura preparada para receber **URLs reais**
+- Estrutura preparada para receber **URLs**
 - Rodapé com **ícones de redes sociais** e tooltips
 
 ---
