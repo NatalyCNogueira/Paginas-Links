@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    position: relative;
+}
+
+header h1 {
+    font-family: "Averia Libre", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    position: static;
+}
+
+div img {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 5px solid #d4cfff;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+}
+
+main {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+main div {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #d8d4ff;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    text-align: center;
+}
+
+main div:hover {
+    background-color: #d2ceff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.contato {
+    background-color: #d8d4ff;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.3s;
+    padding: 10px;
+}
+
+.contato:hover {
+    background-color: #d2ceff;
+}
+
+.contato img {
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+    display: block;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -85%;
+    left: 50%;
+    transform: translate(-50%, 5px);
+    background-color: #9c91ff;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+    font-weight: 600;
+}
+
+.contato:hover .tooltip {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
